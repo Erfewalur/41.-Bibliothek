@@ -1,0 +1,119 @@
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Mediensammlung</title>
+  </head> 
+  <style>
+    #pic{
+      background: url(Bilder/Medien\ Profil.jpg) center no-repeat ;
+      background-size: cover;
+      height: 400px;
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <div id="pic" class="d-none d-sm-block"></div>
+    <!-- NAVIGATIONSLEISTE -->
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: rgba(54, 85, 107, 0.822);">
+          <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>Mediensammlung</b>  (Adminoberfläche)</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="index.html">Benutzeroberfläche</a></li>
+                    <li><a class="dropdown-item" href="Administration.html">Adminoberfläche</a></li>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+        <!-- Karte 1 -->
+        <div class="card-group">
+          <div class="row"></div>
+            <div class="card w-150">
+            <div class="card-body" style="width: 100.7%; height: 35rem; background-color: rgba(245, 135, 32, 0.877);">
+
+              <table class="table position-relative bottom-47 start-40 table-bordered border-dark" style="float: right; width: 15rem; height: 20rem; background-color: aliceblue;">
+                <tr>
+                <td class="p-10 mb-2 bg-dark bg-gradient top"><button>Suche</button></td>
+                </tr>
+                <tr>
+                <td class="p-10 mb-2 bg-light bg-gradient">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Titel" aria-describedby="groessen-addon1">
+                  </div>
+                </td>
+                </tr>
+                <tr>
+                  <td class="p-10 mb-2 bg-light bg-gradient">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Autor/Interpret" aria-describedby="groessen-addon2">
+                    </div>
+                </tr>
+                <tr>
+                  <td class="p-10 mb-2 bg-light bg-gradient">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Kategorie" aria-describedby="groessen-addon3">
+                    </div>
+                <tr>
+                <td class="p-10 mb-2 bg-dark bg-gradient"><button>Hinzufügen</button></td>
+                </tr>
+                <tr>
+                <td class="p-10 mb-2 bg-light bg-gradient"><button>Bearbeiten</button></td>
+                </tr>
+                <tr>
+                  <td class="p-10 mb-2 bg-light bg-gradient"><button>Löschen</button></td>
+                </tr>
+                </table>
+
+              <table class="table table-bordered border-dark top" style="float:right; width: 60rem; height: 30rem; background-color: rgba(247, 247, 248, 0.877);">
+                <thead>
+                  <tr>
+                    <th scope="col">Titel</th>
+                    <th scope="col">Standort</th>
+                    <th scope="col">Autor/Interpret</th>
+                    <th scope="col">Kategorie</th>
+                    <th scope="col">Umfang</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Dinoland</td>
+                    <td>Regal 2; Ebene 7</td>
+                    <td>Wolfgang Hohlbein</td>
+                    <td>Dinosaurier-Saga</td>
+                    <td>926 Seiten</td>
+                </tbody>
+              </table>
+              
+
+
+  
+  
+  
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script>
+          $(".nav-item").click(function(){$("#menue").collapse('hide');
+          $("#menue .bg-primary").removeClass(".bg-primary");
+          $(this).addClass("bg-primary");
+        })
+          $(".dropdown").click(function(){
+          if(!$(this).hasClass("show")) return;
+            $("#menue li>bg-primary").removeClass("bg-primary");
+            $(this).addClass("bg-primary");
+          })
+        </script>
+      </body>
+    </html>
